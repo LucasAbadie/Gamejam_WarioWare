@@ -16,8 +16,6 @@ public class Game08Manager : MonoBehaviour {
 
 		arrayString = GameManager.GetDataParametersArray("arrayWritingWordGame08");
 
-		Debug.Log(arrayString);
-
 		writingWord.text = arrayString[Random.Range(0, 9)];
 
 		inputTextPlaceholder.text = GameManager.GetDataLanguage("inputTextPlaceholderGame08");
@@ -30,7 +28,7 @@ public class Game08Manager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (writingWord.text == inputText.text)
-			Debug.Log("OK");
+		if (writingWord.text == inputText.text && GameManager.gameManager.indexStateGame != 2)
+			GameManager.gameManager.globalWin();
 	}
 }

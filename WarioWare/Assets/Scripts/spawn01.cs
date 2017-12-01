@@ -5,15 +5,18 @@ using UnityEngine;
 public class spawn01 : MonoBehaviour {
     public float x, y, z;
     public GameObject Cube, Sphere;
-    public int nbSphere;
+    private int nbSphere;
 	// Use this for initialization
 	void Start () {
-        for (int i=0; i< nbSphere; i++)
-        {
-            spawnRand(Sphere);
 
-        }
-        spawnRand(Cube);
+		nbSphere = (int)GameManager.GetDataParametersFloat("nbSpheresGame01");
+
+		for (int i=0; i< nbSphere; i++)
+    {
+        spawnRand(Sphere);
+
+    }
+    spawnRand(Cube);
 		
 	}
 	public void spawnRand(GameObject ObjectSpawn)

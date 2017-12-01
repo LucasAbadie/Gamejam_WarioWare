@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Start.unity
-=======
-- path: Assets/Scenes/Game08.unity
->>>>>>> WordMiniJeu
   isLoaded: 1
   isActive: 1

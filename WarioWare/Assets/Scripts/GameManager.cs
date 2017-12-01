@@ -6,10 +6,17 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
 	//variable static  qui ne peut exister qu'une fois dans le programme
-	private static GameManager gameManager = null;
+	public static GameManager gameManager = null;
 
 	// on defini la variable currentLanguage
 	private string currentLangage = "en";
+
+	// index du jeu actuel
+	public int currentIndex = 0;
+	public int failIndex = 0;
+
+	// Index d'état du jeu (0 = play, 1 = lose, 2 = win)
+	public int indexStateGame = 0;
 
 
 	// Use this for initialization
@@ -41,9 +48,7 @@ public class GameManager : MonoBehaviour {
 		GameManager.ChangeLanguage (currentLangage);
 
 		//chargement de menu
-#pragma warning disable CS0618 // Type or member is obsolete
 		Application.LoadLevel("Menu");
-#pragma warning restore CS0618 // Type or member is obsolete
 	}
 
 	public static void ChangeLanguage(string language)
@@ -90,5 +95,33 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 		return f;
+	}
+
+	public void globalWin()
+	{
+		Debug.Log("Win");
+		AudioSource[] audio = this.GetComponents<AudioSource>();
+		audio[1].Play();
+
+		gameManager.indexStateGame = 2;
+		gameManager.failIndex = 0;
+		gameManager.currentIndex++;
+		StartCoroutine(ReturnOpeningAfter2Seconds());
+	}
+	public void globalLose()
+	{
+		Debug.Log("Lose");
+		AudioSource[] audio = this.GetComponents<AudioSource>();
+		audio[0].Play();
+
+		gameManager.indexStateGame = 1;
+		gameManager.failIndex = gameManager.currentIndex;
+		StartCoroutine(ReturnOpeningAfter2Seconds());
+	}
+
+	public IEnumerator ReturnOpeningAfter2Seconds()
+	{
+		yield return new WaitForSeconds(2);
+		Application.LoadLevel("Opening");
 	}
 }

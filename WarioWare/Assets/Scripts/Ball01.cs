@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball01 : MonoBehaviour {
-    public AudioClip GameOverShort;
-    // Use this for initialization
-    void Start () {
+
+  // Use this for initialization
+  void Start () {
 		
 	}
 	
@@ -15,11 +15,11 @@ public class Ball01 : MonoBehaviour {
 	}
 
 
-    void OnMouseDown()
-    {
+  void OnMouseDown()
+  {
 
-        Game01Manager.instance.Lose();
+    GameManager.gameManager.globalLose();
 
 
-    }
+  }
 }

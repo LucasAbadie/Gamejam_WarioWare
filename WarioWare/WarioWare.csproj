@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Assets\NeonShapes\SelfDestroyScript.cs" />
     <Compile Include="Assets\Scripts\Ball01.cs" />
+    <Compile Include="Assets\Scripts\Ball3.cs" />
     <Compile Include="Assets\Scripts\Cube01.cs" />
     <Compile Include="Assets\Scripts\DataManager.cs" />
     <Compile Include="Assets\Scripts\Game01Manager.cs" />

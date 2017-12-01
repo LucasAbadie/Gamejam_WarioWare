@@ -3,29 +3,18 @@ using System.Collections;
 
 public class Game02Manager : MonoBehaviour {
 
-    public MeshRenderer RefPicture;
-    public static Game02Manager instance = null;
-    public Material[] materials;
+	[HideInInspector] public MeshRenderer RefPicture;
+  public static Game02Manager instance = null;
+  public Material[] materials;
 
-  
-
-    void Start () {
+  void Start () {
 		if (instance != null && instance != this) {
 			Destroy (this.gameObject);
 			return;
 		}
 
-        instance = this;
+    instance = this;
 
-        RefPicture.material = materials[Random.Range(0, 2)];
-	}
-
-    public void NextLevel()
-    {
-        Application.LoadLevel("Game03");
-    }
-	
-	void Update () {
-	
+    RefPicture.material = materials[Random.Range(0, 2)];
 	}
 }
