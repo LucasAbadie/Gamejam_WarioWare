@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hud xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<hudName>
+		<name>buttonPlay</name>
+		<value>JOUER</value>
+	</hudName>
+	<hudName>
+		<name>textPseudo</name>
+		<value>Nom du joueur :</value>
+	</hudName>
+		<hudName>
+		<name>placeHolderEnterName</name>
+		<value>Entrez votre nom...</value>
+	</hudName>
+	<hudName>
+		<name>time</name>
+		<value>Temps :</value>
+	</hudName>
+	<hudName>
+		<name>titleGame01</name>
+		<value>Trouve !</value>
+	</hudName>
+	<hudName>
+		<name>titleGame02</name>
+		<value>Compare !</value>
+	</hudName>
+	<hudName>
+		<name>titleGame03</name>
+		<value>Charge !</value>
+	</hudName>
+	<hudName>
+		<name>titleGame08</name>
+		<value>Texte !</value>
+	</hudName>
+	<hudName>
+		<name>inputTextPlaceholderGame08</name>
+		<value>Entrer le texte...</value>
+	</hudName>
+</hud>
