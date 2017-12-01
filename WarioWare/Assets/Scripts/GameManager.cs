@@ -24,7 +24,9 @@ public class GameManager : MonoBehaviour {
 		DontDestroyOnLoad (this.gameObject);
 
 		//chargement de menu
+#pragma warning disable CS0618 // Type or member is obsolete
 		Application.LoadLevel("Menu");
+#pragma warning restore CS0618 // Type or member is obsolete
 	}
 
 }

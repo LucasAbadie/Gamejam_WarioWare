@@ -33,6 +33,8 @@ public class OpeningManager : MonoBehaviour {
 	public IEnumerator LaunchGameAfter3Seconds(string gameName)
 	{
 		yield return new WaitForSeconds(3);
+#pragma warning disable CS0618 // Type or member is obsolete
 		Application.LoadLevel(gameName);
+#pragma warning restore CS0618 // Type or member is obsolete
 	}
 }

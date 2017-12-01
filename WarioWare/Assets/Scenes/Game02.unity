@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44872886, g: 0.49511188, b: 0.5559684, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -215,10 +215,10 @@ RectTransform:
   m_Father: {fileID: 1606156257}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -93, y: -30}
-  m_SizeDelta: {x: 100, y: 40}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 618.45, y: 182.84998}
+  m_SizeDelta: {x: 163.1, y: 28.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &219461013
 MonoBehaviour:
@@ -240,7 +240,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 46095779dbbe7e945b4de61f9a8730cc, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 271963000}
   - component: {fileID: 271962999}
   - component: {fileID: 271962998}
+  - component: {fileID: 271963001}
   m_Layer: 0
   m_Name: PictureB
   m_TagString: Untagged
@@ -297,7 +298,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 271962996}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -343,6 +344,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 271962996}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &271963001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 271962996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ac2df8a3a880a4591a739dc677d523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &546999409
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +366,7 @@ GameObject:
   - component: {fileID: 546999413}
   - component: {fileID: 546999412}
   - component: {fileID: 546999411}
+  - component: {fileID: 546999414}
   m_Layer: 0
   m_Name: PictureA
   m_TagString: Untagged
@@ -381,7 +394,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 546999409}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -427,6 +440,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 546999409}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &546999414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546999409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ac2df8a3a880a4591a739dc677d523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &557879691
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +462,7 @@ GameObject:
   - component: {fileID: 557879695}
   - component: {fileID: 557879694}
   - component: {fileID: 557879693}
+  - component: {fileID: 557879696}
   m_Layer: 0
   m_Name: PictureC
   m_TagString: Untagged
@@ -465,7 +490,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 557879691}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -511,6 +536,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 557879691}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &557879696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 557879691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ac2df8a3a880a4591a739dc677d523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &735047449
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +744,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1032952551}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -766,7 +802,7 @@ GameObject:
   - component: {fileID: 1068617293}
   - component: {fileID: 1068617292}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -785,7 +821,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 478f9f91e8ce7f44b8fa1eab0e770588, type: 2}
+  - {fileID: 2100000, guid: 01b59ca133dbdd94991bc6368c2c5720, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -880,6 +916,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637946ed1084ed4458c0382909ae55db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RefPicture: {fileID: 1032952553}
+  materials:
+  - {fileID: 2100000, guid: bdb198cb7b0e1624aaaed68e4c4bf5dd, type: 2}
+  - {fileID: 2100000, guid: e5ee1a50817ea5349a8c04b6b35813a0, type: 2}
+  - {fileID: 2100000, guid: 595e7a2fb30b5a44396506e2914cc600, type: 2}
 --- !u!4 &1138318157
 Transform:
   m_ObjectHideFlags: 0
@@ -942,7 +983,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1086,12 +1127,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 73
+    m_Font: {fileID: 12800000, guid: 46095779dbbe7e945b4de61f9a8730cc, type: 3}
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 73
+    m_MaxSize: 123
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1120,6 +1161,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchoredPosition: {x: -0.0000030994, y: -0.0000030994}
+  m_SizeDelta: {x: 486, y: 139.5}
   m_Pivot: {x: 0.5, y: 0.5}
