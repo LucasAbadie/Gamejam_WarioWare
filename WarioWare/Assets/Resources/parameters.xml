@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataFloat>
+		<name>nbSpheresGame01</name>
+		<value>40</value>
+	</dataFloat>
+	<dataFloat>
+		<name>timerGame01</name>
+		<value>4</value>
+	</dataFloat>
+	
+	<dataFloat>
+		<name>timerGame02</name>
+		<value>3</value>
+	</dataFloat>
+	
+	<dataFloat>
+		<name>nbClickSphereGame03</name>
+		<value>20</value>
+	</dataFloat>
+	<dataFloat>
+		<name>timerGame03</name>
+		<value>5</value>
+	</dataFloat>
+
+	<dataArray>
+		<name>arrayWritingWordGame08</name>
+		<values>
+			<value0>Pasteque</value0>
+			<value1>Jaunatre</value1>
+			<value2>Barreaux</value2>
+			<value3>Incluent</value3>
+			<value4>Espalier</value4>
+			<value5>Exhibait</value5>
+			<value6>Corrosif</value6>
+			<value7>Lombrics</value7>
+			<value8>Machoire</value8>
+			<value9>Envenime</value9>
+		</values>
+	</dataArray>
+	<dataFloat>
+		<name>timerGame08</name>
+		<value>5</value>
+	</dataFloat>
+</datas>

@@ -10,8 +10,7 @@ public class OpeningManager : MonoBehaviour {
 		"Game01",
 		"Game02",
 		"Game03",
-		"Game04",
-		"Game05"
+		"Game08"
 	};
 
 	// Use this for initialization
@@ -21,7 +20,7 @@ public class OpeningManager : MonoBehaviour {
 		rireWario.Play ();
 
 		// recupérer l'index du jeu actuel (le coder, par defaut pour le moment c'est toujours le premier jeu)
-		int currentIndex = 0; // stocker cette variable dans le game manager et faire un +1 a chaque fin de jeu, la récupérer a cet endroit
+		int currentIndex = 3; // stocker cette variable dans le game manager et faire un +1 a chaque fin de jeu, la récupérer a cet endroit
 		string currentGame = listGame [currentIndex];
 
 		// Lancer la coroutine qui va lancer le jeu qu'il faut
