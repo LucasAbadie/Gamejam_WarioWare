@@ -81,6 +81,7 @@
     <Compile Include="Assets\NeonShapes\SelfDestroyScript.cs" />
     <Compile Include="Assets\Scripts\Ball01.cs" />
     <Compile Include="Assets\Scripts\Cube01.cs" />
+    <Compile Include="Assets\Scripts\DataManager.cs" />
     <Compile Include="Assets\Scripts\Game01Manager.cs" />
     <Compile Include="Assets\Scripts\Game02Manager.cs" />
     <Compile Include="Assets\Scripts\Game02Pictures.cs" />
@@ -98,6 +99,11 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\spawn01.cs" />
     <Compile Include="Assets\Scripts\UI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Resources\en.xml" />
+    <None Include="Assets\Resources\fr.xml" />
+    <None Include="Assets\Resources\parameters.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
